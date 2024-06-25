@@ -34,7 +34,7 @@ function Home() {
         </div>
         <br />
         <p className='text-sm md:text-md text-justify'>
-          
+          Hello! My name is Pushkar and I am 3rd year Student at Punjab Engineering College, Chandigarh. I am a Tech Enthusiast & loves to read and learn about new Technologies.
         </p>
         <br />
       <div className='flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0'>
