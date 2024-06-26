@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div>
+    <><div>
       <Navbar/>
       <Home/>
       <About/>
@@ -22,7 +22,8 @@ function App() {
       <Footer/>
       
       </div>
-      <Toaster/>
+      <Toaster/></>
+    
       
   )
 }
