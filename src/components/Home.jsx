@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from "../../public/profile.jpg"
+import pic from "../../public/profilephoto.jpg"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -35,9 +35,11 @@ function Home() {
         <br />
         <p className='text-sm md:text-md text-justify'>
           Hello! My name is Pushkar and I am 3rd year Student at Punjab Engineering College, Chandigarh. I am a Tech Enthusiast & loves to read and learn about new Technologies.
+
         </p>
         <br />
-      <div className='flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0'>
+        <br />
+      <div className='flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 mx-2 px-4'>
           {/* socila media icons */}
           <div className='space-y-2'>
           <h1 className='font-bold '>Available on</h1>
@@ -83,8 +85,8 @@ function Home() {
 
         </div>
         {/* right */}
-      <div className='md:w-1/2 md:ml-14 md:mt-25 mt-8 mr-3   order-1'>
-      <img src={pic} className='rounded-full md:w-[450px] md:h-[450px] h-[400px] w-[400px] ' alt="" />
+      <div className='md:w-1/2 md:ml-14 md:mt-25 mt-8 mr-3 order-1'>
+      <img src={pic} className='rounded-full border-2 border-black md:w-[450px] md:h-[450px] h-[400px] w-[400px] ' alt="" />
       </div>
       </div>
       
