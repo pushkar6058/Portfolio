@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import pic from "../../public/profile.jpg"
+import pic from "../../public/profilephoto.jpg"
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import {Link} from "react-scroll"
@@ -28,19 +28,25 @@ function Navbar() {
         {
             id:5,
             text:"Contact"
-        }
+        },
+        
     ]
 
 
   return (
     <>
-    <div name="Navbar" className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16 fixed top-0 left-0 right-0 bg-white">
+    <div name="Navbar" className=" max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md h-16 fixed top-0 left-0 right-0 bg-white">
         <div className='flex justify-between items-center'>
-            <div className='flex space-x-2'>
-                <img src={pic}  className="h-12 w-12 rounded-full" alt="" />
+            <div className='flex  space-x-2'>
+                <img src={pic}  className="h-12 w-12 border-1 border-black rounded-full" alt="" />
                 <h1 className='font-semibold text-xl cursor-pointer'>Pushk
                     <span className='text-blue-500'>ar</span>
-                <p className='text-sm'>Frontend Developer</p>
+                <p className='text-sm'><Link onClick={()=>setMenu(!menu)}
+                        to={'Home'}
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                        activeClass='active'>{'Frontend Developer'}</Link></p>
                 </h1>
             </div>
         {/* desktop navbar   */}
@@ -59,7 +65,7 @@ function Navbar() {
             </ul>
 
             <div onClick={()=>setMenu(!menu)} className='md:hidden'>
-                {menu?<IoClose size={24}/> : <IoMenu  size={24}/>
+                {menu?<IoClose className='hover:scale-110' size={24} /> : <IoMenu className='hover:scale-110' size={24}/>
                 }
             </div>
         </div>
