@@ -64,7 +64,7 @@ function Navbar() {
                         smooth={true}
                         duration={500}
                         offset={-70}
-                        activeClass='active'>{'Web Developer'}</Link></p>
+                        activeClass='active'>{'Frontend Developer'}</Link></p>
                 </h1>
             </div>
         {/* desktop navbar   */}
