@@ -5,17 +5,43 @@ import reactjs from "../../public/reactjs.png"
 
 function Portfolio() {
     const cardItems=[
-        {
+      {
         id:1,
-        logo:javascript,
-        name:"JavaScript"
+        logo:reactjs,
+        name : "BookStoreApp",
+        description:"0",
+        gitlink:"https://github.com/pushkar6058/BookStore",
+        liveLink:"/"
     },
+    
     {
         id:2,
         logo:reactjs,
-        name : "ReactJS"
+        name : "MyPortfolio",
+        description:"0",
+        gitlink:"https://github.com/pushkar6058/Portfolio",
+        liveLink:"https://667bcec9d506d3cd0e37e991--peaceful-meerkat-f6a96e.netlify.app/"
+        
 
     }
+       ,
+    {
+        id:3,
+        logo:javascript,
+        name : "Password-Generator",
+        description:"it offers a seamless experience for users to create strong and unique passwords for their accounts, enhancing online security..",
+        gitlink:"https://github.com/pushkar6058/Password-Generator",
+        livelink:"/"
+
+    } ,
+    {
+      id:4,
+      logo:javascript,
+      name:"Stone-paper-scissor-game",
+      description:"0",
+      gitlink:"https://github.com/pushkar6058/Stone-paper-scissor-game",
+      livelink:"/"
+  }
     ]
 
   return (
@@ -24,27 +50,29 @@ function Portfolio() {
             <h1 className='text-3xl font-bold mb-5'>Portfolio</h1>
             <ReactTyped className='text-red-700 font-semibold underline'
           strings={["Featured Projects"]}
-          typeSpeed={0}
-          backSpeed={10}
+          typeSpeed={1}
+          backSpeed={1}
           loop={true}
         />
+{/* i will implement the live button soon */}
+
         <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-5'>
-            {cardItems.map(({id,logo,name}) => (
-              <div className='md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg cursor-pointer hover:scale-110 duration-300' key={id}>
+            {cardItems.map(({id,logo,name,gitlink,description}) => (
+              <div className='md:w-[300px] md:h-[300px] border-[2px] rounded-lg bg-gray-300 qshadow-lg cursor-pointer hover:scale-110 duration-300' key={id}>
                 <img src={logo} className='w-[120px] h-[120px] rounded-full p-1 border-[2px]' alt="" />
                 <div>
                   <div className='px-2 font-bold text-xl mb-2'>{name}</div>
-                  <p className='px-2 text-gray-500  '>Lorem ipsum dolor sit amet, consectetur </p>
+                  <p className='px-2 text-gray-500  '>{description}</p>
                 </div>
 
                <div className=' px-6 py-4 space-x-3 justify-around' >
                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded'>
-                  Video
+                 <a href={gitlink}> GitHub</a>
                   </button>
                   
-                  <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>
-                    Source Code
-                  </button>
+                  {/* <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>
+                    <a href={liveLink}>Live Link</a>
+                  </button> */}
                </div>
               </div>
             ))} 
