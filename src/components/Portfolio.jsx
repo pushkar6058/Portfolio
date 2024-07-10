@@ -9,7 +9,7 @@ function Portfolio() {
         id:1,
         logo:reactjs,
         name : "BookStoreApp",
-        description:"app provides an intuitive interface for users to browse, search, and purchase books. I created dynamic components for book listings, reviews, and user profiles",
+        description:"app provides an intuitive interface for users to browse, search, review, and get books",
         gitlink:"https://github.com/pushkar6058/BookStore",
         liveLink:"/"
     },
@@ -18,7 +18,7 @@ function Portfolio() {
         id:2,
         logo:reactjs,
         name : "MyPortfolio",
-        description:"I crafted my Personal Portfolio Website using React.js to showcase my skills, projects, and professional journey. The website features a clean layout with sections for my projects, skills, and contact information.",
+        description:"I crafted my Personal Portfolio Website using React.js to showcase my skills, projects, and journey.",
         gitlink:"https://github.com/pushkar6058/Portfolio",
         liveLink:"https://667bcec9d506d3cd0e37e991--peaceful-meerkat-f6a96e.netlify.app/"
         
@@ -38,7 +38,7 @@ function Portfolio() {
       id:4,
       logo:javascript,
       name:"Stone-paper-scissor-game",
-      description:" Rock-Paper-Scissors game provides a fun and engaging way for users to pass the time, settle disputes, or make decisions without bias.",
+      description:"It provides a fun and engaging way for users to pass the time, settle disputes, or make decisions without bias.",
       gitlink:"https://github.com/pushkar6058/Stone-paper-scissor-game",
       livelink:"/"
   }
