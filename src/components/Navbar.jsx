@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import pic from "../../public/profilephoto.jpg"
 import { IoMenu } from "react-icons/io5";
@@ -7,6 +7,24 @@ import {Link} from "react-scroll"
 
 
 function Navbar() {
+
+
+
+    const [sticky, setSticky] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setSticky(true);
+        } else {
+          setSticky(false);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
     const [menu,setMenu]=useState(false);
     const navItems=[
         {
