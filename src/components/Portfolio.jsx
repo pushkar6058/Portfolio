@@ -56,9 +56,9 @@ function Portfolio() {
         />
 {/* i will implement the live button soon */}
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-8 py-3  '>
             {cardItems.map(({id,logo,name,gitlink,description}) => (
-              <div className='md:w-[300px] md:h-[300px] border-[2px] rounded-lg bg-gray-300 qshadow-lg cursor-pointer hover:scale-110 duration-300' key={id}>
+              <div className='md:w-[300px] md:h-[350px] border-[2px] rounded-lg bg-gray-300 shadow-lg cursor-pointer hover:scale-110 duration-300 ' key={id} >
                 <img src={logo} className='w-[120px] h-[120px] rounded-full p-1 border-[2px]' alt="" />
                 <div>
                   <div className='px-2 font-bold text-xl mb-2'>{name}</div>
