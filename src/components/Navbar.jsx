@@ -92,10 +92,10 @@ function Navbar() {
 
                 {menu && (
                    <div className='bg-white'>
-            <ul  className='md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl'>
+            <ul  className='md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl '>
             
                 { navItems.map(({id,text})=> (
-                    <li className="hover:scale-110 duration-200 cursor-pointer  font-semibold"
+                    <li className="hover:scale-110 duration-200  cursor-pointer  font-semibold"
                      key={id}>
                         <Link onClick={()=>setMenu(!menu)}
                         to={text}
