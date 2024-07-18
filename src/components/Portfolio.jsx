@@ -8,25 +8,33 @@ function Portfolio() {
       {
         id:1,
         logo:reactjs,
+        name : "ManageYourDay",
+        description:"Aimed at simplifying task management and enhancing productivity.",
+        gitlink:"https://github.com/pushkar6058/todoApp",
+        livelink:"https://sensational-granita-e92fcd.netlify.app/"
+    },
+      {
+        id:2,
+        logo:reactjs,
         name : "BookStoreApp",
         description:"app provides an intuitive interface for users to browse, search, review, and get books",
         gitlink:"https://github.com/pushkar6058/BookStore",
-        liveLink:"/"
+        livelink:"/"
     },
     
     {
-        id:2,
+        id:3,
         logo:reactjs,
         name : "MyPortfolio",
         description:"I crafted my Personal Portfolio Website using React.js to showcase my skills, projects, and journey.",
         gitlink:"https://github.com/pushkar6058/Portfolio",
-        liveLink:"https://667bcec9d506d3cd0e37e991--peaceful-meerkat-f6a96e.netlify.app/"
+        livelink:"https://em84vz81.netlify.app/"
         
 
     }
        ,
     {
-        id:3,
+        id:4,
         logo:javascript,
         name : "Password-Generator",
         description:"it offers a seamless experience for users to create strong and unique passwords for their accounts, enhancing online security..",
@@ -35,7 +43,7 @@ function Portfolio() {
 
     } ,
     {
-      id:4,
+      id:5,
       logo:javascript,
       name:"Stone-paper-scissor-game",
       description:"It provides a fun and engaging way for users to pass the time, settle disputes, or make decisions without bias.",
@@ -56,13 +64,13 @@ function Portfolio() {
         />
 {/* i will implement the live button soon */}
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-8 py-3  '>
-            {cardItems.map(({id,logo,name,gitlink,description}) => (
-              <div className='md:w-[300px] md:h-[350px] border-[2px] rounded-lg bg-gray-300 shadow-lg cursor-pointer hover:scale-110 duration-300 ' key={id} >
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-8 py-5  '>
+            {cardItems.map(({id,logo,name,gitlink,description,livelink}) => (
+              <div className='md:w-[300px] md:h-[320px] border-[2px] rounded-lg bg-gray-300 shadow-lg cursor-pointer hover:scale-110 duration-300 ' key={id} >
                 <img src={logo} className='w-[120px] h-[120px] rounded-full p-1 border-[2px]' alt="" />
                 <div>
                   <div className='px-2 font-bold text-xl mb-2'>{name}</div>
-                  <p className='px-2 text-gray-500  '>{description}</p>
+                  <p className='px-2 text-gray-500 text-sm  '>{description}</p>
                 </div>
 
                <div className=' px-6 py-4 space-x-3 justify-around' >
@@ -70,9 +78,10 @@ function Portfolio() {
                  <a href={gitlink}> GitHub</a>
                   </button>
                   
-                  {/* <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>
-                    <a href={liveLink}>Live Link</a>
-                  </button> */}
+                  {(livelink==="/")?"":<button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>
+
+                   <a href={livelink}>Live</a>
+                  </button>}
                </div>
               </div>
             ))} 
