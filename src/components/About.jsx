@@ -6,14 +6,14 @@ function About() {
         <div>
         <h1 className='text-3xl font-bold mb-5'>About</h1>
         <p>
-            Hello, I'm Pushkar, a passionate Web Developer with a keen eye for frontend dev with React.
-            With a k background in IT, I strive to create impactful and visually stunning Software 
+            Hello, I'm Pushkar, a passionate Web Developer with a keen eye for frontend development with React.
+            With a background in IT, I strive to create impactful and visually stunning Software 
             solutions that leave a lasting impression.
         </p>
         <br />
         <h1 className='text-green-600 font-semibold text-xl'>Education & Training</h1>
         <span>
-            3rd year undergrad at Punjab Engineering College, Chandigarh.<br/>
+            4th year undergrad at Punjab Engineering College, Chandigarh.<br/>
             BTech in Computer Science(Data Science).
         </span>
        <br />
@@ -32,16 +32,22 @@ function About() {
 
         <h1 className='text-green-600 font-semibold text-xl'>Professional Experience</h1>
         <span>
-            Participated in Hackathon organised by ACM-CSS, PEC, Chandigarh.
+            Worked at <span className='text-blue-700'>
+                NIC(National Informatics Center) Govt of India
+                </span> as a Software Development Intern for 6 months.
         </span>
         </div>
 
         <br />
         <br />
         <h1 className='text-green-600 font-semibold text-xl'>Achievements & Rewards</h1>
-        <span>
-            3-Star coder geeksforgeeks with global rating of 1687 (check above for latest)
-        </span>
+        <ul>
+           <li> Received a 4-star rating on HackerRank for solving SQL problems.</li>
+<li>Solved over 350 Data Structures & Algorithms problems across various platforms like geeksforgeeks, leetcode, etc.</li>
+ <li></li>
+ Top Contributor in DSA Supreme2.0 Course By Love Babbar.
+ Participated in the Hackathon organized by ACM-CSS in the college.
+        </ul>
 
         <br />
        <br />

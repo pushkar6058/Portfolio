@@ -12,7 +12,8 @@ function App() {
 
 
   return (
-    <><div>
+    <>
+    <div>
       <Navbar/>
       <Home/>
       <About/>
@@ -20,10 +21,12 @@ function App() {
       <Experience/>
       <Contact/>
       <Footer/>
-      
-      </div>
-      <Toaster/></>
+       </div>
+      <Toaster/>
+     
     
+      
+    </>
       
   )
 }

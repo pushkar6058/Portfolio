@@ -56,12 +56,7 @@ function Portfolio() {
     <div name="Portfolio" className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10'>
         <div>
             <h1 className='text-3xl font-bold mb-5'>Portfolio</h1>
-            <ReactTyped className='text-red-700 font-semibold underline'
-          strings={["Featured Projects"]}
-          typeSpeed={1}
-          backSpeed={1}
-          loop={true}
-        />
+            
 {/* i will implement the live button soon */}
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-3 my-8 py-5  '>

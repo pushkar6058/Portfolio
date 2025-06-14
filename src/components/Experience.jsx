@@ -6,21 +6,19 @@ import html from "../../public/html.png"
 import mongodb from "../../public/mongodb.jpg"
 import css from "../../public/css.jpg"
 import c from "../../public/c-logo.png"
+import ws from "../../public/ws.png"
+import webrtc from "../../public/webrtc.png"
 
 
 function Experience() {
 
     const cards=[
-        {
-            id:6,
-            logo:c,
-            name : "c++"
-    
-        },
+        
         {
         id:1,
-        logo:html,
-        name:"HTML"
+        logo:javascript,
+        name : "JavaScript"
+        
     },
     {
         id:2,
@@ -30,8 +28,9 @@ function Experience() {
     },
     {
         id:3,
-        logo:javascript,
-        name : "JavaScript"
+        logo:html,
+        name:"HTML"
+        
 
     },
     {
@@ -45,7 +44,26 @@ function Experience() {
         logo:mongodb,
         name : "MongoDB"
 
-    }
+    },
+    {
+            id:6,
+            logo:c,
+            name : "c++"
+    
+        },
+        {
+            id:7,
+            logo:ws,
+            name : "WebSockets"
+    
+        },
+        {
+            id:8,
+            logo:webrtc,
+            name : "WebRTC"
+    
+        },
+
     
     ]
 
@@ -56,7 +74,7 @@ function Experience() {
          <p className=''>I have worked with these technologies in my recent work experience.</p>
          <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3 '>
             {cards.map(({id,logo,name}) => (
-              <div className='flex flex-col items-center justify-center border-[2px] rounded-full md:width-[200px] md:height-[200px] cursor-pointer hover:scale-110 duration-300' key={id}>
+              <div className='flex flex-col bg-gray-300 items-center justify-center border-[2px] rounded-full md:width-[200px] md:height-[200px] cursor-pointer hover:scale-110 duration-300' key={id}>
                 <img src={logo} 
                 className='w-[150px] rounded-full ' 
                 alt='' />
